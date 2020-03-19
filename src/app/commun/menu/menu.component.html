@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-md bg-secondary navbar-light">
+  <span class="navbar-brand">
+    🛰️ STAR WARS KINGDOM 🛰️
+  </span>
+
+  <!-- Ajouter un bouton pour le menu responsive -->
+  <button class="navbar-toggler" (click)="toogleMenu(menu)">
+    <span class="navbar-toggler-icon"> </span>
+  </button>
+
+  <div class="collapse navbar-collapse" #menu>
+    <ul class="navbar-nav mr-auto">
+      <li>
+        <a href="/"> Accueil</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a href="/admin" class="nav-link"> Admin </a>
+      </li>
+    </ul>
+  </div>
+</nav>
