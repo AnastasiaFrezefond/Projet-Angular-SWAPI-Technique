@@ -8,18 +8,13 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './commun/menu/menu.component';
 import { AccueilComponent } from './front/accueil/accueil.component';
 import { PeopleComponent } from './front/people/people.component';
-import { StarshipComponent } from './front/starship/starship.component';
-import { MoviesComponent } from './front/movies/movies.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     AccueilComponent,
-    PeopleComponent,
-    StarshipComponent,
-    MoviesComponent,
-
+    PeopleComponent
   ],
   imports: [
     BrowserModule,
