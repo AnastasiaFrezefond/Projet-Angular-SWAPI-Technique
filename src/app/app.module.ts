@@ -18,9 +18,14 @@ import { PeopleComponent } from './front/people/people.component';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([{ path: "", component: AccueilComponent }]),
+    RouterModule.forRoot([
+      { path: "", component: AccueilComponent },
+      { path: "people/:id", component: PeopleComponent }
+      // url pour
+    ]),
     HttpClientModule
   ],
+  exports: [RouterModule],
   providers: [PeopleService],
   bootstrap: [AppComponent]
 })

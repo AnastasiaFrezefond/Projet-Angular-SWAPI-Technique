@@ -17,9 +17,9 @@ export class PeopleComponent implements OnInit {
   { }
   ngOnInit(): void {
     this.router.paramMap.subscribe( (params) =>{
-      const name = params.get("name");
-      console.log(name)
-      this.service.getPeopleByName(name)
+      const id = params.get("id");
+      console.log(id);
+      this.service.getPeopleById(id)
       .subscribe( (response : Response) => {
         this.people = response;
         console.log(this.people);
