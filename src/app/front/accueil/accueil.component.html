@@ -1,15 +1,17 @@
 <div class="row mt-3">
+
     <article class="col-6 card" *ngFor="let people of peoples; index as i">
-      <!-- donc ici je déclare une variable people qui sera elle même fournie par le contenu de var peoples -->
+      <!-- donc ici je déclare une variable people qui sera elle même fournie par le contenu de var peoples
+    -->
 
       <h1 class="h5">{{ people.name }}</h1>
       <h2 class="h6">{{ people.mass }}</h2>
       <p>
         <!-- c'est là qu'on d'éfini ce qui se passe quand on clique sur read more -->
-      <a routerLink="/people/{{ i }}" class="btn btn-primary">
+      <a routerLink="/people/{{ i+1 }}" class="btn btn-primary">
           Read more
-
       </a>
+
       </p>
     </article>
 </div>

@@ -12,15 +12,20 @@ import { Observable } from "rxjs";
 export class PeopleService {
   url = "https://swapi.co/api/people";
 
-  constructor(private http: HttpClient) { }
   // Constructor = creation d'un objet
+  constructor(private http: HttpClient) { }
+  
 
+  // ça me retourne une liste de tous 
   getAllPeoples(): Observable<any>
   {
     return this.http.get(this.url);
   }
+  
+  // ça me retourne un objet
   getPeopleById(id : string): Observable<any>
   {
     return this.http.get(this.url + "/" + id);
   }
+
 }
